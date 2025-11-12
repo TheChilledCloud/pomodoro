@@ -47,7 +47,7 @@ jobs:
           - name: Import Existing ECR (if any) # Check if ECR exists, then import to avoid recreation
             continue-on-error: true
             run: |
-              if aws ecr describe-repositories --repository-names todolist_app_registry --region ${{vars.AWS_REGION}} >/dev/null 2>&1; then
+              if aws ecr describe-repositories --repository-names pomodoro-ecr --region ${{vars.AWS_REGION}} >/dev/null 2>&1; then
                 echo "ECR exists, importing to state..."
                 terraform import aws_ecr_repository.todolist_app_registry todolist_app_registry
               else

@@ -11,6 +11,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    restart: on-failure
     ports:
       - "${BIND_PORT:-80}:80" # Dynamically set the port from BIND_PORT or default to 80
     volumes:
@@ -48,6 +49,10 @@ services:
       interval: 10s
       timeout: 10s
       retries: 5
+
+networks:
+  pomodoro-network:  # ADD THIS
+    driver: bridge
 
 volumes:
   app-data:

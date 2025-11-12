@@ -41,8 +41,6 @@ jobs:
 
           - name: Terraform Init
             run: terraform init
-            env:
-              TF_PLUGIN_CACHE_DIR: ${{ github.workspace }}/.terraform-cache
 
           - name: Import Existing ECR (if any) # Check if ECR exists, then import to avoid recreation
             continue-on-error: true

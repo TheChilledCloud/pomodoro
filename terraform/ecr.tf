@@ -1,3 +1,4 @@
+# Defines ECR Repository
 resource "aws_ecr_repository" "poomodoro_ecr_resource_name" {
   name                 = var.ecr_name
   image_tag_mutability = "MUTABLE" # or "IMMUTABLE" based on your requirement

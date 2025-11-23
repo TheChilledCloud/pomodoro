@@ -1,13 +1,28 @@
+# Terraform state files (CONTAINS SECRETS!)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
 terraform/.terraform.lock.hcl
-terraform/.terraform
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
 
-# Crash log files
-crash.log
-crash.*.log
+# IDE
+.vscode/
+.idea/
+*.swp
 
-# Exclude .env files
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables (if you create a .env file later)
 .env

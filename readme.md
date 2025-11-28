@@ -6,7 +6,7 @@ A fully containerized, high-availability deployment of the Pomodoro application 
 
 This project deploys a secure, scalable infrastructure on AWS using Infrastructure as Code (IaC).
 
-![Architecture Diagram](./ecs_cloud_architecture.jpg)
+![Architecture Diagram](./ecs_cloud_architecture.png)
 
 ### Key Features
 - **High Availability:** ECS Cluster spanning multiple Availability Zones (AZs).

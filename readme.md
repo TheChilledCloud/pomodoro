@@ -1,4 +1,25 @@
-# Pomodoro - Time Management Web App
+# Pomodoro DevOps Project 🚀
+
+A fully containerized, high-availability deployment of the Pomodoro application using AWS, Terraform, and GitHub Actions.
+
+## Cloud Architecture
+
+This project deploys a secure, scalable infrastructure on AWS using Infrastructure as Code (IaC).
+
+![Architecture Diagram](./ecs_cloud_architecture.jpg)
+
+### Key Features
+- **High Availability:** ECS Cluster spanning multiple Availability Zones (AZs).
+- **Load Balancing:** Application Load Balancer (ALB) distributing traffic.
+- **Security:** Database isolated in Private Subnet; Application in Public Subnet.
+- **IaC:** 100% defined in Terraform (VPC, ECS, RDS, IAM, Security Groups).
+- **CI/CD:** GitHub Actions pipeline for automated Build & Deployment.
+- **State Management:** Terraform state stored in S3 with DynamoDB locking.
+
+---
+
+
+## Pomodoro - Time Management Web App
 ### _Made in Python with Flask_
 
 
